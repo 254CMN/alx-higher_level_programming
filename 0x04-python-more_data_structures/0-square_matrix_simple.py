@@ -8,5 +8,6 @@ def square_matrix_simple(matrix=[]):
         for j in range(col):
             matrix[i][j] **= 2
 
-    return matrix
+    new_matrix = matrix
+    return new_matrix
 
