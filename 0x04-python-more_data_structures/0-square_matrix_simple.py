@@ -2,12 +2,11 @@
 def square_matrix_simple(matrix=[]):
     """Computes the square value of integers in a matrix"""
 
-    rows = len(matrix)
-    col = len(matrix[0])
-    for i in range(rows):
-        for j in range(col):
-            matrix[i][j] **= 2
-
-    new_matrix = matrix
-    return new_matrix
+    mod_matrix = []
+    for row in matrix:
+        squared_row = []
+        for num in row:
+            squared_row.append(num**2)
+        mod_matrix.append(squared_row)
+    return mod_matrix
 
