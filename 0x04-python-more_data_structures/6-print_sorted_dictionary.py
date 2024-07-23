@@ -4,7 +4,8 @@ def print_sorted_dictionary(a_dictionary):
 
     """
     sorted_dic = sorted(a_dictionary.items(), key=lambda item: (item[0], item[1]))
-    print(sorted_dic)
+    for i, j in sorted_dic:
+        print(i,":",j)
 """
    sorted_dic = sorted(a_dictionary)
     
