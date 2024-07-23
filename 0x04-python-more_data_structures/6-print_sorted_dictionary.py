@@ -3,8 +3,12 @@ def print_sorted_dictionary(a_dictionary):
     """Prints a dictionary by ordered keys
 
     """
-    sorted_dic = sorted(a_dictionary)
+    sorted_dic = sorted(a_dictionary.items(), key=lambda item: (item[0], item[1]))
+    print(sorted_dic)
+"""
+   sorted_dic = sorted(a_dictionary)
     
     for i in sorted_dic:
         print(i,":", a_dictionary.get(i))
+"""
 
